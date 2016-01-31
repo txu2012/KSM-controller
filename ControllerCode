@@ -8,7 +8,7 @@
 #include <Encoder.h> 
 long oldPositionL  = -999;
 long oldPositionR  = -999;
-Encoder EncL(0, 1);
+Encoder EncL(0, 1);   // Setting up Encoder Pins on circuit board
 Encoder EncR(2, 3);
  
  boolean A_set = false;              
@@ -16,7 +16,7 @@ Encoder EncR(2, 3);
  boolean C_set = false;              
  boolean D_set = false;
  
-void setup()
+void setup()     // Setting up pins for buttons
 {
   pinMode(4, INPUT_PULLUP);
   pinMode(A0, INPUT_PULLUP);
@@ -30,7 +30,7 @@ void setup()
   Serial.begin(9600);
 }
  
-void loop() {
+void loop() {     // Key presses to act as the button presses on Keyboard
  
   if(digitalRead(4)==LOW){
     Keyboard.press('a');
@@ -75,6 +75,8 @@ void loop() {
     Keyboard.release('g');
   }
   delay(DELAY);
+  
+  // Encoder Setup for mouse movements, left encoder for x mouse movements and right encoder for y movements
   
   long newPositionL = EncL.read();
   long newPositionR = EncR.read();
