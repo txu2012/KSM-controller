@@ -1,6 +1,7 @@
 // NOTE: NOT A JAVA CODE, ONLY MEANT FOR CODE FORMAT
 // KSM-controller
 // Code for Arduino Leonardo Circuit board for K-shoot Mania controller
+// Use Arduino IDE
 
 #define DELAY            5  // Delay per loop in ms
 
