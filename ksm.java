@@ -1,3 +1,4 @@
+// NOTE: NOT A JAVA CODE, ONLY MEANT FOR CODE FORMAT
 // KSM-controller
 // Code for Arduino Leonardo Circuit board for K-shoot Mania controller
 
